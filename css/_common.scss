@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: local('TT Firs Neue Regular'), local('TTFirsNeue-Regular'),
+      url('../resources/fonts/TTFirsNeue-Regular.woff2') format('woff2'),
+      url('../resources/fonts/TTFirsNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'TT Firs Neue';
+  src: local('TT Firs Neue Bold'), local('TTFirsNeue-Bold'),
+      url('../resources/fonts/TTFirsNeue-Bold.woff2') format('woff2'),
+      url('../resources/fonts/TTFirsNeue-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: TT Firs Neue, Roboto, sans-serif;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+

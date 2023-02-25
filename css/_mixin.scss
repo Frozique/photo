@@ -1,0 +1,92 @@
+@import 'variables';
+
+@mixin grid($gap) {
+  display: grid;
+  gap: $gap;
+}
+
+@mixin gridTemplateCol($columns, $min, $max) {
+  grid-template-columns: repeat($columns, minmax($min, $max));
+}
+
+@mixin gridTemplateRow($rows, $min, $max) {
+  grid-template-rows: repeat($rows, minmax($min, $max));
+}
+
+@mixin background() {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin label($vp, $hp, $top, $right) {
+  position: absolute;
+  padding-top: $vp;
+  padding-bottom: $vp;
+  padding-right: $hp;
+  padding-left: $hp;
+  top: $top;
+  right: $right;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $primaryWhite;
+  background-color: $primary;
+}
+
+@mixin btnKit() {
+  &:focus {
+    background-color: $orange;
+    outline: 3px solid $extraDarkOrange;
+  }
+  &:hover {
+    background-color: $darkOrange;
+  }
+  &:active {
+    background-color: $extraDarkOrange;
+  }
+}
+
+@mixin reversedBtnKit() {
+  &:focus {
+    background-color: $darkOrange;
+    outline: 1px solid $orange;
+  }
+  &:hover {
+    background-color: $orange;
+  }
+  &:active {
+    outline: none;
+    background-color: $extraDarkOrange;
+  }
+}
+
+@mixin inputKit() {
+  &:focus {
+    border: 1px solid $orange;
+  }
+  &:hover {
+    &::placeholder {
+      color: $orange;
+    }
+  }
+  &:focus-visible {
+    color: $primaryWhite;
+  }
+}
+
+
+@mixin inputFormKit() {
+  &:focus {
+    border: 1px solid $orange;
+  }
+  &:hover {
+    &::placeholder {
+      color: $orange;
+    }
+  }
+  &:focus-visible {
+    color: $primary;
+  }
+}

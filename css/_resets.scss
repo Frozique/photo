@@ -1,0 +1,40 @@
+@import 'variables';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+ul,
+ol {
+  margin:  0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  margin: 0;
+  padding: 15.5px 22px;
+  background-color: $orange;
+  font-family: Roboto;
+  border: none;
+  outline: none;
+  color: $primaryWhite;
+}
+
+.section-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: $primary;
+}
+
+.section-offset {
+  margin-bottom: 88px;
+}
